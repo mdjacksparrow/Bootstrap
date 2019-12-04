@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai|Fira+Sans:300|Roboto+Mono|Ubuntu&display=swap');
+*{
+ padding: 0;
+ margin: 0;
+}
+
+
+/* Nav bar  */
+.fa-location-arrow{
+ padding-right:10px ;
+}
+
+nav > .nav-link{
+ font-size: 3em;
+ color: white;
+ padding: 0.4rem;
+ /* font-weight: 200; */
+font-family: 'Baloo Bhai', cursive;}
+
+.nav-link:hover{
+ color:white;
+}
+
+.fa-caret-down{
+ color: white;
+ font-size: 2em;
+ border: none;
+}
+
+.navbar-nav{
+ font-size: 1.2rem;
+ right:0;
+ /* position:absolute; */
+ padding-right: 5%;
+}
+
+.nav-item{
+ padding: 0.3em;
+}
+
+
+/* Banner  */
+.carousel-caption{
+ /* border: 1px solid red; */
+ margin-bottom:5em;
+}
+
+.about-the-event{
+ background: url("./img/other/question.jpg");
+ /* background-color: tomato; */
+ background-size: cover;
+ color: white;
+ background-attachment: fixed;
+}
+
+.display-4{
+ font-size: 2.3em;
+}
