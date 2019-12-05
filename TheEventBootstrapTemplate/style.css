@@ -6,15 +6,19 @@
 
 
 /* Nav bar  */
+
+nav{
+ /* border:1px solid white; */
+ padding: 0;
+ margin: 0;
+}
 .fa-location-arrow{
  padding-right:10px ;
 }
 
 nav > .nav-link{
- font-size: 3em;
+ font-size: 2em;
  color: white;
- padding: 0.4rem;
- /* font-weight: 200; */
 font-family: 'Baloo Bhai', cursive;}
 
 .nav-link:hover{
@@ -30,15 +34,17 @@ font-family: 'Baloo Bhai', cursive;}
 .navbar-nav{
  font-size: 1.2rem;
  right:0;
- /* position:absolute; */
- padding-right: 5%;
+ margin-right: 3%;
 }
 
-.nav-item{
- padding: 0.3em;
+#about-button{
+ /* background-color: blue; */
+ border :2px solid #C33C54;
+ background-color: rgba(17, 15, 15, 0.4);
 }
-
-
+#about-button:hover{
+ background-color: #C33C54;
+}
 /* Banner  */
 .carousel-caption{
  /* border: 1px solid red; */
@@ -47,7 +53,6 @@ font-family: 'Baloo Bhai', cursive;}
 
 .about-the-event{
  background: url("./img/other/question.jpg");
- /* background-color: tomato; */
  background-size: cover;
  color: white;
  background-attachment: fixed;
@@ -55,4 +60,43 @@ font-family: 'Baloo Bhai', cursive;}
 
 .display-4{
  font-size: 2.3em;
+}
+
+.card-img-overlay{
+   /* border: 1px solid red; */
+   padding: 2em;
+   position: absolute;
+}
+.card-title{
+ /* margin-top: 40%; */
+ position: absolute;
+ bottom: 1.4em;
+ left: 10px;
+  /* border: 1px solid red; */
+}
+
+.icons{
+ color: white;
+  /* border: 1px solid red; */
+  /* font-size: 1.3em;
+  padding: .3em; */
+  position: absolute;
+ bottom: 0.4em;
+ left: 15px;
+ padding: 0;
+
+}
+
+.fa-instagram,.fa-facebook-square,.fa-google-plus-g,.fa-linkedin{
+   /* border: 1px solid red; */
+   color: white;
+   padding: 0.2em;
+
+}
+
+.card-text{
+ /* border: 1px solid red; */
+ position: absolute;
+ bottom: 1em;
+ left: 15px;
 }
