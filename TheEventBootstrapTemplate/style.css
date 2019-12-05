@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo+Bhai|Fira+Sans:300|Roboto+Mono|Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alata&display=swap');
 *{
  padding: 0;
  margin: 0;
@@ -68,7 +69,6 @@ font-family: 'Baloo Bhai', cursive;}
    position: absolute;
 }
 .card-title{
- /* margin-top: 40%; */
  position: absolute;
  bottom: 1.4em;
  left: 10px;
@@ -78,8 +78,6 @@ font-family: 'Baloo Bhai', cursive;}
 .icons{
  color: white;
   /* border: 1px solid red; */
-  /* font-size: 1.3em;
-  padding: .3em; */
   position: absolute;
  bottom: 0.4em;
  left: 15px;
@@ -100,3 +98,91 @@ font-family: 'Baloo Bhai', cursive;}
  bottom: 1em;
  left: 15px;
 }
+
+/* Event schedule  */
+.event-schedule > h3{
+ color: #153B50;
+}
+
+.day{
+ /* border: 1px solid black; */
+ padding: 1em;
+}
+
+.day-container{
+  /* border: 1px solid black; */
+ width: 100%;
+} 
+
+.day-container button{
+ width: 32%;
+ background-color: #153B50;
+}
+
+.day-container > button:first-child{
+ background-color: rgb(230, 38, 38);
+}
+
+.registration .description{
+ color: rgb(21, 88, 124);
+ font-style: italic;
+}
+
+.registration{
+ color: #153B50;
+}
+
+.registration .reg img{
+  /* border: 1px solid red; */
+  width: 100px;
+ float: left;
+ width: 70px;
+ height: 70px;
+ padding: 0.5em;
+ border-radius: 10em;
+ }
+
+
+.eventVenue > h3{
+ color: #153B50;
+ font-size: 2.3em;
+}
+
+.eventVenue > p{
+ font-size: 1.3em;
+}
+
+.conference-description{
+ padding: 2em;
+ background: url("./img/other/banner-3.jpg");
+ background-size: cover;
+ color: white;
+}
+
+.conference-description > h3{
+  font-size: 2.3em;
+font-family: 'Alata', sans-serif;
+}
+
+.card-size img{
+ height: 250px;
+}
+
+
+/* Hotel section  */
+.hotels > h3{
+ color: #153B50;
+ font-size: 2.3em;
+}
+
+.hotels > p{
+ font-size: 1.3em; 
+}
+
+.card-body > h3{
+ padding: 5px;
+ font-size: 1.5em;
+ color: white;
+ /* border: 1px solid black; */
+ }
+
