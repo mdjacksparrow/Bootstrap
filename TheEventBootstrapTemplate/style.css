@@ -186,3 +186,40 @@ font-family: 'Alata', sans-serif;
  /* border: 1px solid black; */
  }
 
+ .stars{
+  position: absolute;
+  top: 0.4em;
+  left: 1.4em;
+ }
+
+ .checked{
+  color: #fdcc0d;
+ }
+
+ .carousel img{
+  width: 100vw;
+ }
+
+ /* gallery */
+ .gallery  > h3{
+  color: #153B50;
+  font-size: 2.3em;
+ }
+
+ .gallery > p{
+  font-size: 1.3em;
+ }
+
+
+ .sponsors > h3{
+  color: #153B50;
+  text-align: center;
+  font-size: 2.3em;
+ }
+
+ .sponsors img{
+  height: 100px;
+  width: 250px;
+  padding: 1em;
+  margin: auto;
+ }
