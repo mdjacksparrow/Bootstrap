@@ -548,18 +548,18 @@
  </div>
 
  <!-- Faq with collapse container  -->
-<div class="faq">
+<div class="faq container">
   <h3 class="font-weight-bolder">F.A.Q</h3>
 
   <hr>
 
-  <div class="container">
-    <a href="#data-1" data-toggle="collapse">
+  <div class="container faq-container">
+    <a href="#data-1" data-toggle="collapse" class= "active">
       Non consectetur a erat nam at lectus urna duis?
       <span class="fas fa-plus-square"></span>
     </a>
 
-    <div id="data-1" class="collapse container">
+    <div id="data-1" class="collapse container ">
       Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis
       lectus magna fringilla urna porttitor rhoncus dolor purus non.lsjf
     </div>
@@ -610,33 +610,93 @@ convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
         <span class="fas fa-plus-square"></span>
       </a>
       
-      <div id="data-5" class="collapse container">
+      <div id="data-5" class="container collapse">
     Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo
     viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
       </div>
     
+      <button class="btn btn-dark">More info</button>
       <hr>
+ </div>
 
-      <a href="#data-6" data-toggle="collapse">
-        Tortor vitae purus faucibus ornare. Varisu vel pharetra vel trupis nunc eget ?
-        <span class="fas fa-plus-square"></span>
-      </a>
-      
-      <div id="data-6" class="collapse container">
-  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt
-  eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu
-  scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie
-  nunc non blandit massa enim nec.
-      </div>
-
-      <hr>
-  </div>
 </div>
 
 <!-- newsletter section with fixed background  -->
+<div class="newsletter container-fluid">
+  <h3 class="font-weight-bolder">NEWSLETTER</h3>
+  <p>Rerum numquam illum recusandae quia mollitia consequatur.</p>
+  <hr>
+
+  <div class="subscribe">
+    <input type="email" name="email" id="in" class="rounded-pill" placeholder="Enter your Email ">
+    <button type="submit" class="btn btn-danger rounded-pill">Subscribe</button>
+  </div>
+</div>
+
 
 <!-- Buy tickets section with three columns  -->
+<div class="tickets mt-4 container">
+  <h3 class="font-weight-bolder">BUY TICKETS</h3>
+  <p class="text-secondary text-center">Velit consequatur consequatur inventore iste fugit unde omnis eum aut.</p>
 
+  <hr>
+
+  <div class="ticket-container row">
+    <div class="card container  col-lg-3 col-sm-12 mt-2">
+      <div class="card-header">
+        <h6 class="text-secondary">STANDARD ACCESS</h6>
+        <p>$150</p>
+      </div>
+      <div class="card-body">
+          <p><span class="fa fa-check"></span> Regular Seating</p>
+          <p><span class="fa fa-check"></span>  Coffee Break</p>
+          <p><span class="fa fa-check"></span> Custom Badge</p>
+          <p class="text-secondary"><span class="fa fa-times "></span> Community Access</p>
+          <p class="text-secondary"><span class="fa fa-times "></span> Workshop Access</p>
+          <p class="text-secondary"><span class="fa fa-times "></span> After Party</p>
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-danger rounded-pill">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="card container col-md-12 col-lg-4 col-sm-12 mt-2">
+      <div class="card-header">
+        <h6 class="text-secondary">PRO ACCESS</h6>
+        <p>$250</p>
+      </div>
+      <div class="card-body">
+        <p><span class="fa fa-check"></span> Regular Seating</p>
+        <p><span class="fa fa-check"></span> Coffee Break</p>
+        <p><span class="fa fa-check"></span> Custom Badge</p>
+        <p ><span class="fa fa-check"></span> Community Access</p>
+        <p class="text-secondary"><span class="fa fa-times text-secondary"></span> Workshop Access</p>
+        <p class="text-secondary"><span class="fa fa-times text-secondary"></span> After Party</p>
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-danger rounded-pill">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="card container col-md-12 col-lg-4 col-sm-12 mt-2">
+      <div class="card-header">
+        <h6>PREMIUM ACCESS</h6>
+        <p>$350</p>
+      </div>
+      <div class="card-body">
+        <p><span class="fa fa-check"></span> Regular Seating</p>
+        <p><span class="fa fa-check"></span> Coffee Break</p>
+        <p><span class="fa fa-check"></span> Custom Badge</p>
+        <p><span class="fa fa-check"></span> Community Access</p>
+        <p><span class="fa fa-check"></span> Workshop Access</p>
+        <p><span class="fa fa-check"></span> After Party</p>
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-danger rounded-pill">Buy Now</button>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- Contact section with three column section  -->
 
 <!-- footer section  -->
