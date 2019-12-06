@@ -6,6 +6,7 @@
 *{
  padding: 0;
  margin: 0;
+ font-family: 'Alata',monospace;
 }
 
 
@@ -15,7 +16,9 @@ nav{
  /* border:1px solid white; */
  padding: 0;
  margin: 0;
+ background-color: #090e22;
 }
+
 .fa-location-arrow{
  padding-right:10px ;
 }
@@ -23,7 +26,8 @@ nav{
 nav > .nav-link{
  font-size: 2em;
  color: white;
-font-family: 'Baloo Bhai', cursive;}
+font-family: 'Alata', monospace;
+}
 
 .nav-link:hover{
  color:white;
@@ -44,7 +48,7 @@ font-family: 'Baloo Bhai', cursive;}
 #about-button{
  /* background-color: blue; */
  border :2px solid #C33C54;
- background-color: rgba(17, 15, 15, 0.4);
+ /* background-color: rgba(17, 15, 15, 0.4); */
 }
 #about-button:hover{
  background-color: #C33C54;
@@ -53,11 +57,17 @@ font-family: 'Baloo Bhai', cursive;}
 .carousel-caption{
  /* border: 1px solid red; */
  margin-bottom:5em;
+ font-family: 'Alata',monospace;
+}
+
+.carousel-inner img{
+  height: 100vh;
+  width: 100vw;
 }
 
 .about-the-event{
  background: url("./img/other/question.jpg");
- background-size: cover;
+ background-size: contain;
  color: white;
  background-attachment: fixed;
 }
@@ -104,7 +114,7 @@ font-family: 'Baloo Bhai', cursive;}
 
 /* Event schedule  */
 .event-schedule > h3{
- color: #153B50;
+ color: #162357;
 }
 
 .day{
@@ -119,7 +129,7 @@ font-family: 'Baloo Bhai', cursive;}
 
 .day-container button{
  width: 32%;
- background-color: #153B50;
+ background-color: #162357;
 }
 
 .day-container > button:first-child{
@@ -132,7 +142,7 @@ font-family: 'Baloo Bhai', cursive;}
 }
 
 .registration{
- color: #153B50;
+ color: #162357;
 }
 
 .registration .reg img{
@@ -147,7 +157,7 @@ font-family: 'Baloo Bhai', cursive;}
 
 
 .eventVenue > h3{
- color: #153B50;
+ color:#162357;
  font-size: 2.3em;
 }
 
@@ -174,7 +184,7 @@ font-family: 'Alata', sans-serif;
 
 /* Hotel section  */
 .hotels > h3{
- color: #153B50;
+ color: #162357;
  font-size: 2.3em;
 }
 
@@ -205,7 +215,7 @@ font-family: 'Alata', sans-serif;
 
  /* gallery */
  .gallery  > h3{
-  color: #153B50;
+  color: #162357;
   font-size: 2.3em;
  }
 
@@ -215,7 +225,7 @@ font-family: 'Alata', sans-serif;
 
 
  .sponsors > h3{
-  color: #153B50;
+  color: #162357;
   text-align: center;
   font-size: 2.3em;
  }
@@ -229,14 +239,14 @@ font-family: 'Alata', sans-serif;
 
 
  .faq > h3{
-   color: #153B50;
+   color: #162357;
    text-align: center;
    font-size: 2.3em;
  }
 
  .faq a{
    text-decoration: none;
-   color: #153B50;
+   color: #162357;
    width: 100%;
    font-weight: bolder;
    float: left;
@@ -305,7 +315,7 @@ input[type = "email"]{
 }
 
 .tickets > h3{
-  color: #153B50;
+  color: #162357;
   /* border: 1px solid black; */
   text-align: center;
   font-size: 2.3em;
@@ -331,20 +341,138 @@ input[type = "email"]{
 }
 
 .ticket-container .card-body p{
-/* color: white; */
 font-size: 1em;
 text-align: left;
 padding-left: 10px;
-/* padding:1em; */
-/* border: 1px solid black; */
 }
 
 .ticket-container .card-footer button{
-  /* border: 1px solid black; */
   display: block;
-  /* background-color: #C33C54; */
-  /* color: white; */
   margin: auto;
   width: 180px;
 }
 
+.contact > h3{
+  text-align: center;
+  font-size: 2.3em;
+  color: #153B50;
+}
+
+.contact > p{
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.contact-info h3{
+  /* border: 1px solid black; */
+  margin-top: 1em;
+  text-align: center;
+  font-size: 1em;
+  color: #162357;
+}
+
+.contact-info p{
+  text-align: center;
+}
+
+.contact-info a{
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+
+.form input[type="text"]{
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  outline: none;
+  margin: auto;
+  padding: 5px;
+  width: 80%;
+  margin-top:10px;
+}
+
+.form textarea{
+  margin:auto;
+  display: block;
+  margin-top:15px;
+  width: 80%;
+  padding: 5px;
+}
+
+.form button{
+  /* border: 1px solid black; */
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  outline: none;
+  /* border: 1px solid rgba(0, 0, 0, 0.2); */
+}
+
+/* footer section  */
+footer{
+background-color:#090e22;
+color: white;
+/* width: 100%; */
+}
+
+footer .footer-info{
+  padding: 2em 4em;
+  /* border: 1px solid white; */
+  width: 100%;
+}
+
+footer .head h3{
+  font-family: 'Alata',monospace;
+  font-size: 2.3em;
+}
+
+footer .head p{
+  padding: 0 1em;
+}
+
+footer .footer-info h3{
+  font-size: 1em;
+}
+
+footer .footer-links a{
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+footer .footer-links .fa-chevron-right{
+  padding: 10px;
+}
+
+footer .footer-links a:hover{
+  padding: 10px;
+  color: #C33C54;
+}
+
+footer .footer-info-1  p{
+  /* display: inline-block; */
+  /* width: 50%; */
+  /* border:1px solid white; */
+  padding: 1em 0;
+}
+
+footer .footer-icons a{
+  /* border: 1px solid white; */
+  font-size: 1.3em;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #153B50;
+}
+
+.footer-last{
+  background-color: #153B50;
+  padding: 1em;
+}
+
+.footer-last p{
+  color: white;
+  text-align: center;
+
+}

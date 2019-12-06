@@ -32,7 +32,7 @@
 <body>
 
  <!-- Navbar section  -->
- <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+ <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
 
   <!-- Brand  -->
   <a href="#" class="nav-link">
@@ -81,11 +81,11 @@
  <!-- carousel container  -->
  <div class="carousel">
   <div class="carousel-inner">
-   <img src="./img/other/banner-2.jpg" style="width:100vw;height: 100vh;" alt="Banner">
+   <img src="./img/other/banner-2.jpg" alt="Banner">
   </div>
 
   <div class="carousel-caption">
-   <h2 class="display-4">THE ANNUAL <span class="text-danger">MARKETING</span> CONFERENCE</h2>
+   <h2 class="">THE ANNUAL <span class="text-danger">MARKETING</span> CONFERENCE</h2>
    <p>10-12 December, Downtown Conference Center, New York</p>
 
    <button class="btn btn-outline-danger text-white rounded-pill"  id = "about-button">About The Event</button>
@@ -93,7 +93,7 @@
  </div>
 
  <!-- Three column section with fixed background  -->
-<div class="row  container-fluid about-the-event p-3">
+<div class="row  container about-the-event p-3">
  <div class="col-lg-4 container">
   <h2 class="display-4">About The Event</h2>
   <p>Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et.
@@ -697,18 +697,97 @@ convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
     </div>
   </div>
 </div>
+
+
 <!-- Contact section with three column section  -->
+<div class="contact mt-5 container">
+  <h3 class="font-weight-bolder">CONTACT US</h3>
+  <p class="text-secondary">Nihil officia ut sint molestiae tenetur.</p>
+
+  <hr>
+
+  <div class="contact-info row">
+    <div class="col-md-4 col-sm-12">
+      <h3 class="font-weight-bolder">ADDRESS</h3>
+      <p class="text-info">A108 Adam Street, NY 535022, USA</p>
+    </div>
+
+    <div class="col-md-4 col-sm-12">
+      <h3 class="font-weight-bolder">PHONE NUMBER</h3>
+      <p class="text-info">+1 5589 55488 55</p>
+    </div>
+
+    <div class="col-md-4 col-sm-12">
+      <h3 class="font-weight-bolder">EMAIL</h3>
+      <a href = "#" class="text-info">info@example.com</a>
+    </div>
+  </div>
+
+  <div class="form">
+    <input type="text" name="FirstName" id="FirstName"  placeholder="Your Name">
+    <input type="text" name="SecondName" id="SecondName" placeholder="Your Email">
+    <input type="text" name="Subject" id="Subject" placeholder="Subject">
+    <textarea name="message" id="" cols="30" rows="5" placeholder="Message"></textarea>
+    <button type="submit" class="btn btn-danger rounded-pill">Send Message</button>
+</div>
+</div>
 
 <!-- footer section  -->
+<footer class="row mt-4">
+
+  <div class="footer-info head container col-sm-12 col-md-4 col-lg-4">
+    <h3 style="font-size: 2.3em;"><span class="fas fa-location-arrow"></span>The<span class="text-danger" >Event</span></h3>
+    <p>In alias aperiam. Placeat tempore facere. Officiis voluptate ipsam vel eveniet est dolor et totam porro. Perspiciatis
+      ad
+      omnis fugit molestiae recusandae possimus. Aut consectetur id quis. In inventore consequatur ad voluptate cupiditate
+      debitis accusamus repellat cumque.</p>
+  </div>
+
+    <div class="footer-info col-sm-12 col-md-4 col-lg-4 footer-links">
+      <h3 class="font-weight-bolder">USEFUL LINKS</h3>
+      <hr>
+      <a href="#">
+        <span class="fa fa-chevron-right"></span>Home
+      </a>
+      <a href="#">
+        <span class="fa fa-chevron-right"></span>About us
+      </a>
+      <a href="#">
+        <span class="fa fa-chevron-right"></span>Service
+      </a>
+      <a href="#">
+        <span class="fa fa-chevron-right"></span>Terms of service
+      </a>
+      <a href="#">
+        <span class="fa fa-chevron-right"></span>Privacy policy
+      </a>
+    </div>
+
+    <div class="footer-info-1 footer-info col-sm-12 col-md-4 col-lg-4">
+      <h3 class="font-weight-bolder">CONTACT US</h3>
+      <hr>
+      <p>A108 Adam Street
+      New York, <br> NY 535022
+      United States <br>
+      <strong>Phone:</strong> +1 5589 55488 55 <br>
+      <strong>Email:</strong> info@example.com</p>
+
+      <div class="footer-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+  
+</footer>
+
+<div class="footer-last">
+    <p>&copy;Copyright <strong>T
+        heEvent</strong>. All Rights Reserved <br> Designed by <span class="text-danger">Mdjack</span></p>
+  </div>
+
+
 </body>
 </html>
-
-<script>
- function myMap() {
-  var mapProp = {
-   center: new google.maps.LatLng(51.508742, -0.120850),
-   zoom: 5,
-  };
-  var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
- }
-</script>
