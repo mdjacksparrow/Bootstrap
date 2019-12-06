@@ -27,9 +27,26 @@
  <!-- link for stylesheet  -->
  <link rel="stylesheet" href="./style.css">
 
+ <!-- link for script.js -->
+ <script src="./script.js"></script>
+
+    <script>
+
+      // click to go top of the page
+      $(document).ready(function () {
+        $('.scrollToTop').click(function () {
+          $('html,body').animate({ scrollTop: 0 }, 800);
+
+          return false;
+        })
+      })
+    </script>
  <title>The Event</title>
 </head>
 <body>
+
+<!-- top move button  -->
+<button class="top btn btn-danger scrollToTop" id="myBtn"><span class="fa fa-chevron-up"></span></button>
 
  <!-- Navbar section  -->
  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
@@ -51,28 +68,28 @@
      <a href="#" class="nav-link">Home</a>
     </li>
     <li class="nav-item">
-     <a href="#" class="nav-link">About</a>
+     <a href="#about" class="nav-link">About</a>
     </li>
     <li class="nav-item">
-     <a href="#" class="nav-link">Speakers</a>
+     <a href="#speakers" class="nav-link">Speakers</a>
     </li>
     <li class="nav-item">
-     <a href="#" class="nav-link">Venue</a>
+     <a href="#venue" class="nav-link">Venue</a>
     </li>
     <li class="nav-item">
-     <a href="#" class="nav-link">Hotels</a>
+     <a href="#hotels" class="nav-link">Hotels</a>
     </li>
     <li class="nav-item">
-     <a href="#" class="nav-link">Gallery</a>
+     <a href="#gallery" class="nav-link">Gallery</a>
     </li>
     <li class="nav-item">
-     <a href="#" class="nav-link">Sponsors</a>
+     <a href="#sponsors" class="nav-link">Sponsors</a>
     </li>
     <li class="nav-item">
-     <a href="#" class="nav-link">Contact</a>
+     <a href="#contact" class="nav-link">Contact</a>
     </li>
     <li class="nav-item" >
-     <a href="#" class="text-white btn btn-danger rounded-pill" role="button">Buy Tickets</a>
+     <a href="#tickets" class="text-white btn btn-danger rounded-pill" role="button">Buy Tickets</a>
     </li>
    </ul>
   </div>
@@ -81,7 +98,7 @@
  <!-- carousel container  -->
  <div class="carousel">
   <div class="carousel-inner">
-   <img src="./img/other/banner-2.jpg" alt="Banner">
+   <img src="./img/other/banner-2.jpg" alt="Banner" style="height:100vh;width:100vw;">
   </div>
 
   <div class="carousel-caption">
@@ -93,7 +110,7 @@
  </div>
 
  <!-- Three column section with fixed background  -->
-<div class="row  container about-the-event p-3">
+<div class="row  container-fluid about-the-event p-3">
  <div class="col-lg-4 container">
   <h2 class="display-4">About The Event</h2>
   <p>Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et.
@@ -110,12 +127,13 @@
  </div>
 </div>
 
-<hr>
- <!-- Event Speakers with 3 column section  -->
-<div class="even-speakers container-fluid text-center mt-3">
+<!-- Event Speakers with 3 column section  -->
+<a name = "speakers"></a>
+<div class="even-speakers container-fluid text-center mt-5">
  <h2>EVENT SPEAKERS</h2>
  <p>Here are some out speakers</p>
 
+<hr class="center-mark">
 
  <div class="container-fluid card-deck">
    <div class="card">
@@ -219,11 +237,11 @@
 <hr>
 
  <!-- Event schedule  -->
-<div class="event-schedule container mt-3">
+<div class="event-schedule container mt-5">
  <h3 class="text-center">EVENT SCHEDULE</h3>
  <p class="text-center text-secondary">Here is out event schedule</p> 
 
- <hr>
+<hr class="center-mark">
 
  <div class="row day">
    <div class="day-container">
@@ -247,7 +265,7 @@
    </div>
   </div>
 
-  <hr>
+  <hr class="hr-full-light">
 
   <div class="row reg">
    <p class="text-secondary">10:00 AM</p>
@@ -258,7 +276,7 @@
    </div>
   </div>
 
-  <hr>
+  <hr class="hr-full-light">
 
    <div class="row reg">
     <p class="text-secondary">11:00 AM</p>
@@ -269,7 +287,7 @@
     </div>
    </div>
 
-   <hr>
+    <hr class="hr-full-light">
 
    <div class="row reg">
     <p class="text-secondary">12:00 PM</p>
@@ -280,7 +298,7 @@
     </div>
    </div>
 
-   <hr>
+    <hr class="hr-full-light">
 
    <div class="row reg">
     <p class="text-secondary">2:00 PM</p>
@@ -291,7 +309,7 @@
     </div>
    </div>
    
-   <hr>
+    <hr class="hr-full-light">
 
   <div class="row reg">
    <p class="text-secondary">3:00 PM</p>
@@ -302,7 +320,7 @@
    </div>
   </div>
   
-  <hr>
+  <hr class="hr-full-light">
   <div class="row reg">
    <p class="text-secondary">4:00 PM</p>
    <div class="col-sm-10">
@@ -312,18 +330,19 @@
    </div>
   </div>
   
-  <hr>   
+    <hr class="hr-full-light">
   </div>
 </div>
  <!-- Event venue with two container
       1. two column section
       2. four column section
  -->
-
- <div class="eventVenue container-fluid mt-4">
+<a name = "venue"></a>
+ <div class="eventVenue container-fluid mt-5">
   <h3 class="text-center font-weight-bolder">EVENT VENUE </h3>
   <P class="text-center text-secondary">Event venue location info and gallery</P>
-  <hr>
+  
+  <hr class="center-mark">
 
   <!-- Description  -->
  <div class="col-sm-12 col-md-12 col-lg-12 conference-description">
@@ -370,11 +389,12 @@
 </div>
 
  <!-- Hotel with three column section  -->
+ <a name = "hotels"></a>
 <div class="hotels container mt-5">
   <h3 class="font-weight-bolder text-center">HOTELS</h3>
   <p class="text-secondary font-italic text-center">Her are some nearby hotels</p>
 
-  <hr>
+<hr class="center-mark">
 
   <div class="row">
 
@@ -434,11 +454,12 @@
 <hr>
 
  <!-- Gallery with carousel event  -->
-<div class="gallery  mt-4">
+ <a name = "gallery"></a>
+<div class="gallery  mt-5">
   <h3 class="font-weight-bolder text-center">GALLERY</h3>
   <p class="text-secondary text-center">Check our gallery from the recent events</p>
 
-  <hr>
+  <hr class="center-mark">
 
   <div class="carousel slide" id="head" data-ride="slide">
     <!-- for indication or navigation  -->
@@ -504,13 +525,13 @@
 </div>
 
  <!-- Sponsors with four column section  -->
-
- <div class="sponsors">
+<a name = "sponsors"></a>
+ <div class="sponsors mt-5">
    <h3 class="font-weight-bolder">
      SPONSORS
    </h3>
   
-    <hr>
+<hr class="center-mark">
 
     <div class="row m-sm-5">
       <div class="card col-md-4 col-xl-3 p-sm-4">
@@ -548,15 +569,16 @@
  </div>
 
  <!-- Faq with collapse container  -->
-<div class="faq container">
+<div class="faq container mt-5">
   <h3 class="font-weight-bolder">F.A.Q</h3>
 
-  <hr>
+  <hr class="center-mark">
 
   <div class="container faq-container">
-    <a href="#data-1" data-toggle="collapse" class= "active">
+    <a href="#data-1" data-toggle="collapse" class= "active" onclick="changeSign(1)">
       Non consectetur a erat nam at lectus urna duis?
-      <span class="fas fa-plus-square"></span>
+      <span class="fas fa-plus-square" id="minus-1"></span>
+      <!-- fa fa-minus-square -->
     </a>
 
     <div id="data-1" class="collapse container ">
@@ -566,9 +588,9 @@
 
     <hr>
 
-    <a href="#data-2" data-toggle="collapse">
+    <a href="#data-2" data-toggle="collapse" onclick="changeSign(2)">
      Feugiat scelerisque varius mobvi enum nunc faucibus a pellentesqud?
-      <span class="fas fa-plus-square"></span>
+      <span class="fas fa-plus-square" id="minus-2"></span>
     </a>
     
     <div id="data-2" class="collapse container">
@@ -579,9 +601,9 @@
 
     <hr>
 
-    <a href="#data-3" data-toggle="collapse">
+    <a href="#data-3" data-toggle="collapse" onclick="changeSign(3)">
      Dolor sit amet consectetur adipiscing elit pellentesque habitant  morbi?
-      <span class="fas fa-plus-square"></span>
+      <span class="fas fa-plus-square" id="minus-3"></span>
     </a>
     
     <div id="data-3" class="collapse container">
@@ -592,9 +614,9 @@ convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
 
     <hr>
 
-      <a href="#data-4" data-toggle="collapse">
+      <a href="#data-4" data-toggle="collapse" onclick="changeSign(4)">
         Ac odio tempor orci adpibux. Aliquam eleifend mi in null ?
-        <span class="fas fa-plus-square"></span>
+        <span class="fas fa-plus-square" id="minus-4"></span>
       </a>
       
       <div id="data-4" class="collapse container">
@@ -605,9 +627,9 @@ convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
 
       <hr>
 
-      <a href="#data-5" data-toggle="collapse">
+      <a href="#data-5" data-toggle="collapse" onclick="changeSign(5)">
        Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
-        <span class="fas fa-plus-square"></span>
+        <span class="fas fa-plus-square" id="minus-5"></span>
       </a>
       
       <div id="data-5" class="container collapse">
@@ -635,11 +657,12 @@ convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
 
 
 <!-- Buy tickets section with three columns  -->
-<div class="tickets mt-4 container">
+<a name = "tickets"></a>
+<div class="tickets mt-5 container">
   <h3 class="font-weight-bolder">BUY TICKETS</h3>
   <p class="text-secondary text-center">Velit consequatur consequatur inventore iste fugit unde omnis eum aut.</p>
 
-  <hr>
+  <hr class="center-mark">
 
   <div class="ticket-container row">
     <div class="card container  col-lg-3 col-sm-12 mt-2">
@@ -700,11 +723,12 @@ convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
 
 
 <!-- Contact section with three column section  -->
+<a name ="contact"></a>
 <div class="contact mt-5 container">
   <h3 class="font-weight-bolder">CONTACT US</h3>
   <p class="text-secondary">Nihil officia ut sint molestiae tenetur.</p>
 
-  <hr>
+<hr class="center-mark">
 
   <div class="contact-info row">
     <div class="col-md-4 col-sm-12">
@@ -732,10 +756,11 @@ convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
 </div>
 </div>
 
-<!-- footer section  -->
-<footer class="row mt-4">
+<!-- contact us section  -->
+<a name = "about"></a>
+<div class="mt-5 contact-us row col-md-12 col-lg-12 col-sm-12">
 
-  <div class="footer-info head container col-sm-12 col-md-4 col-lg-4">
+  <div class="contact-us-info head container col-sm-12 col-md-4 col-lg-4">
     <h3 style="font-size: 2.3em;"><span class="fas fa-location-arrow"></span>The<span class="text-danger" >Event</span></h3>
     <p>In alias aperiam. Placeat tempore facere. Officiis voluptate ipsam vel eveniet est dolor et totam porro. Perspiciatis
       ad
@@ -743,36 +768,41 @@ convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
       debitis accusamus repellat cumque.</p>
   </div>
 
-    <div class="footer-info col-sm-12 col-md-4 col-lg-4 footer-links">
+    <div class="contact-us-info col-sm-12 col-md-4 col-lg-4 contact-us-links">
       <h3 class="font-weight-bolder">USEFUL LINKS</h3>
-      <hr>
+      <hr class="hr-full-width">
       <a href="#">
         <span class="fa fa-chevron-right"></span>Home
       </a>
+      <hr class="hr-full-grey">
       <a href="#">
         <span class="fa fa-chevron-right"></span>About us
       </a>
+      <hr class="hr-full-grey">
       <a href="#">
         <span class="fa fa-chevron-right"></span>Service
       </a>
-      <a href="#">
+        <a href="#">
+                <hr class="hr-full-grey">
         <span class="fa fa-chevron-right"></span>Terms of service
       </a>
+      <hr class="hr-full-grey">
       <a href="#">
         <span class="fa fa-chevron-right"></span>Privacy policy
       </a>
+      <hr class="hr-full-grey">
     </div>
 
-    <div class="footer-info-1 footer-info col-sm-12 col-md-4 col-lg-4">
+    <div class="contact-us-info-1 contact-us-info col-sm-12 col-md-4 col-lg-4">
       <h3 class="font-weight-bolder">CONTACT US</h3>
-      <hr>
+      <hr class="hr-full-width">
       <p>A108 Adam Street
       New York, <br> NY 535022
       United States <br>
       <strong>Phone:</strong> +1 5589 55488 55 <br>
       <strong>Email:</strong> info@example.com</p>
 
-      <div class="footer-icons">
+      <div class="contact-us-icons">
         <a href="#"><i class="fab fa-instagram"></i></a>
         <a href="#"><i class="fab fa-facebook-square"></i></a>
         <a href="#"><i class="fab fa-google-plus-g"></i></a>
@@ -781,13 +811,14 @@ convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
     </div>
 
   
-</footer>
+</div>
 
-<div class="footer-last">
+<footer class="footer-last">
     <p>&copy;Copyright <strong>T
         heEvent</strong>. All Rights Reserved <br> Designed by <span class="text-danger">Mdjack</span></p>
-  </div>
-
+  </footer>
 
 </body>
 </html>
+
+
