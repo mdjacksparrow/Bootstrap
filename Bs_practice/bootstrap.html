@@ -18,7 +18,88 @@
 <body>
 
   <div class="container-fluid bg-info mt-3 mb-3 pt-3 pb-3">
-    
+    <h3>This is practice for Model in BS-4</h3>
+
+    <button class="btn btn-success" data-target="#mod" data-toggle="modal">Open Model</button>
+
+    <div class="modal fade modal-lg modal-xl " id="mod">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+
+          <!-- Model header -->
+          <div class="modal-header">
+            <h3>It's modal header</h3>
+            <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius nulla similique porro magni dolor nisi itaque tenetur labore odio doloremque veniam vel a animi nemo ?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat fugiat ipsa nulla exercitationem cupiditate, aut dolore minima error tenetur accusamus impedit laboriosam blanditiis maxime consequuntur hic vel laborum expedita quaerat ex facere? Consequuntur, debitis quaerat eligendi ab hic a saepe aliquam veritatis corporis ad repellendus asperiores possimus deleniti, reiciendis, dolores nam velit voluptatem facilis cupiditate doloremque! Itaque officiis assumenda minima sit modi nihil deleniti tempora odit, dolore mollitia, laudantium dolor optio rerum earum voluptas et eius rem excepturi distinctio vitae magnam culpa asperiores hic. Sunt, blanditiis ut error expedita optio officia maxime quaerat quae est ab voluptas atque repellendus debitis.
+            </p>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-3">
+      <a href="#" title="Hello!" data-toggle="tooltip" data-placement="top" >Hover me!</a>
+
+      <h5 title="Yes/No" data-toggle="tooltip">Hello can we go to sleep?</h5>
+    </div>
+
+    <div class="container">
+      <a href="#" class="text-light" data-toggle="popover" title="Header" data-content="This is content for pop over" data-placement = "bottom" data-trigger = "focus">Click me to show popover!</a>
+    </div>
+
+    <div class="container m-3">
+      <div class="toast" data-autohide = "false">
+        <div class="toast-header">
+          <h3>This is header</h3>
+          <button class="close" data-dismiss="toast">&times;</button>
+        </div>
+        <div class="toast-body">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, mollitia.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class = "clearfix container m-3">
+      <button class="btn btn-success w-25 float-left">Left</button>
+      <button class="btn btn-success w-25 float-right">Right</button>
+    </div>
+    <button class="btn btn-success w-25 mx-auto d-block">Center</button>
+
+    <div class="iframe container mt-4">
+
+  <h2>Aspect ratio 1:1</h2>
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
   </div>
+    </div>
+  </div>
+  
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+
+    $(document).ready(()=>{
+      $('[data-toggle = "popover"]').popover();
+    });
+
+    $(document).ready(() => {
+      $('.toast').toast('show');
+    });
+
+  </script>
+
 </body>
 </html>̥̥̥̥
